@@ -14,6 +14,11 @@ body{
     font-family: "Open Sans";
 }
 
+
+html, body {
+  overflow-x: hidden;
+}
+
 ul{
     list-style: none;
 }
@@ -86,12 +91,12 @@ a{
 }
 
 /* تخطيط للصفحه قبل تنسيق العناصر */
-/* .grid-area {
+.grid-area {
   outline: 2px solid red;
 }
 .grid-area > * {
   outline: 1px dashed blue;
-} */
+}
 
 
 header{
@@ -850,58 +855,78 @@ footer{
     grid-area: footer;
 }
 
-.table{
+.table-container {
+    width: 100%;
     overflow-x: auto;
 }
 
-table{
-    min-width: 100%;
-} 
-
-
-table thead td{
- background-color: aliceblue;
-    padding: 10px;
-    
+.responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
 }
 
-
-table tbody td{
-    padding: 15px;
+.responsive-table th,
+.responsive-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
 }
 
-td{
-    border-bottom: 1px solid #eeeeeed7;
-    border-left: 1px solid #eeeeeeb7;
+.responsive-table img {
+        width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: -15px;
+    border: 2px solid white;
 }
 
-@media(max-width:867px){
-    td{
-        font-size:9px;
-    }
-
-}
-
-td:last-child{
-    border-right: 1px solid #eeeeeec3;
-}
-
-tbody tr:hover{
+/* تأثير hover */
+.responsive-table tbody tr:hover {
     background-color: rgba(240, 248, 255, 0.615);
 }
 
-tbody td:hover{
+.responsive-table tbody td:hover {
     background-color: rgba(8, 114, 201, 0.368);
 }
 
-footer img{
-   border: 3px solid white;
-    margin: -10px;
+/* Responsive للشاشات الصغيرة */
+@media (max-width: 867px) {
+    .responsive-table thead {
+        display: none; /* إخفاء الهيدر */
+    }
+
+    .responsive-table tr {
+        display: block;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .responsive-table td {
+               display: grid;
+        justify-content: space-between;
+        padding: 10px;
+        border: none;
+        border-bottom: 1px solid #eee;
+    }
+
+    .responsive-table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: #333;
+    }
+
+    .responsive-table img {
+               width: 25px;
+        height: 25px;
+        margin-right: 3px;
+        margin-top: -10px;
+        border: 2px solid white;
+    }
 }
 
-.c-w{
-    color: white;
-}
 
 /* statr Settings */
 

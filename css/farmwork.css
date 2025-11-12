@@ -1,0 +1,188 @@
+.p-15{
+    padding: 15px;
+}
+
+.p-10{
+    padding: 10px;
+}
+
+.p-5{
+ padding: 5px;
+}
+
+.mr-20{
+    margin-right: 20px;
+}
+
+.pl-35px{
+    padding-left: 35px;
+}
+
+.br-10px{
+    border-radius: 15px;
+}
+
+.br-50{
+    border-radius: 50%;
+}
+
+.bw{
+    background-color: white;
+}
+
+.be{
+    background-color: #eee;
+}
+
+.c-d{
+    color: dimgrey;
+    text-decoration: line-through;
+}
+
+.wm{
+    width: 32px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+    gap: 30px;
+}
+
+.sl{
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.sm{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.ss{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.tcenter{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.lin{
+      line-height: 0.5;
+}
+
+.h2{
+      letter-spacing: -1px;
+}
+
+.p{
+  color: #928d8d;
+}
+
+
+.s-h{
+    font-size: 17px;
+    letter-spacing: -1px;
+}
+
+
+.s-p{
+    font-size: medium;
+    color: dimgray;
+}
+
+.border-btoom{
+   border-bottom: 1px solid #eeeeee;
+}
+
+.blue{
+    background-color:rgba(55, 0, 255, 0.362);
+}
+
+.ylw{
+    background-color:rgba(6, 84, 156, 0.384);
+}
+
+.green{
+    background-color:rgba(4, 255, 0, 0.226);
+}
+
+
+
+.box-news{
+      display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.part-box{
+    display: grid;
+    grid-template-columns: auto 1fr;
+     gap: 10px;
+}
+
+.p-class{
+  font-size: 13px;
+    font-weight: 700;
+    position: relative;
+    z-index: 0;
+}
+
+.p-class::before{
+ content: "";
+    display: block;
+    width: 130%;
+    height: 30px;
+    border-radius: 10px;
+    position: absolute;
+    left: -7px;
+    top: -8px;
+    background-color: #eee;
+    z-index: -1;
+}
+
+.p-Items{
+    width:max-content;
+    font-weight: 600;
+    font-size: smaller;
+}
+
+.part-boxs{
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.blues{
+  color: rgba(0, 0, 255, 0.523);
+}
+
+
+.c-b{
+  background-color: blue;
+}
+
+.c-y{
+   background-color: rgb(255 0 245);
+}
+
+.c-g{
+    background-color: green;
+}
+
+.c-r{
+    background-color: red;
+}
+
+.c-c{
+    background-color:#cccccc2b ;
+
+}
